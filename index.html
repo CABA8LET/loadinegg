@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="x3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="loading">
+        <h1>loading</h1>
+        <div id="counter" class="counter">0%</div>
+        <hr class="loading-bar-back">
+        <hr id="loading-bar-front" class="loading-bar-front">
+    </div>
+    <script>
+        
+        const counter = document.getElementById("counter")
+        const bar = document.getElementById("loading-bar-front")
+        let i = 0
+        function update () {
+            counter.innerText = i + "%"
+            bar.style.width = i + "%"
+            i+=1
+            if (i<=100) {
+                setTimeout (update, 1)
+            }
+        }
+        update()
+    </script>
+</body>
+</html>
