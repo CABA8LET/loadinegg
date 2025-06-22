@@ -1,0 +1,36 @@
+body{
+    background-color: rgba(151, 136, 136, 0.517);
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+.loading{
+position: relative;
+}
+
+.counter{
+font-family: cursive;
+font-style:oblique;
+}
+.loading-bar-back{
+  height: 17px;
+  background-color: darkgrey;
+  border-radius: 2px;
+  border: none;
+  position: absolute;
+  width: 100%;
+}
+.loading-bar-front{
+  height: 17px;
+  background-color: dimgrey;
+  border-radius: 2px;
+  border: none;
+  position: absolute;
+  width: 0%;
+}
